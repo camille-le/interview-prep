@@ -1,3 +1,35 @@
+## Table of Contents
+- [STRINGS](#strings)
+  - [Python String Iteration](#python-string-iteration)
+  - [Python Indexing](#python-indexing)
+  - [Python Count() Method](#python-count-method)
+  - [Python Find() Method](#python-find-method)
+  - [Python Index() Method](#python-index-method)
+  - [Python Replace() Method](#python-replace-method)
+  - [Python SplitLines() Method](#python-splitlines-method)
+  - [Python String join() Method](#python-string-join-method)
+
+## STRINGS
+See [common string operations](https://www.w3schools.com/python/python_ref_string.asp) for a comprehensive list. Relevant for interviews:
+
+- Strings in Python are immutable.
+- Casting a string to a list is `O(n)`.
+- Character lists are mutable.
+
+### Python String Iteration
+Without splitting the text, this loop will print over each character in a new line:
+```python
+text = "abc"
+for ch in text:
+    print(ch)
+"""
+output:
+a
+b
+c
+"""
+
+
 ## STRINGS
 See [common string operations](https://www.w3schools.com/python/python_ref_string.asp) for a comprehensive list. Relevant for interviews:
 
