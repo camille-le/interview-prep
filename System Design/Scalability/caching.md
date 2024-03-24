@@ -17,11 +17,46 @@ _Diagram 1_:
 [Image Source](https://medium.com/geekculture/system-design-basics-caching-46b1614915f8)
 
 
-### What are the types of caches?
+## What are the types of caches?
 * Application Server Cache:
 * Distributed Cache:
-* Global Cache:
 
+### Global Cache
+ABOUT:
+- Global (central) cache lives near app servers and primary DBs
+- Use key-value data model
+
+ PROS:
+ - Reduce overall app latency. 
+ - Can be used to reduce load on the primary DB, improve scalability, reduce cos
+ - Data invalidation is easier with a central cache than other types
+
+CONS:
+- Added operational burden and availability impacts from a central cache 
+
+  ![Global Cache](https://assets-global.website-files.com/628fadb065a50abf13a11485/631b41dbf8115f0d8195823d_Types%20of%20Caches%20whitepaper%20-%20Central%20Cache.jpeg)
+
+### Local Cache
+ABOUT: 
+- Local caches stores cached data in a decentralized way (e.g. as close as possible to the client that needs the data)
+- Data can be cached in the browser's local storage
+- Data can also be stored on the application servers
+
+PROS:
+- Eliminate network requests to downstream services
+- Reading value from memory is orders of magnitude faster than making a network request
+
+CONS:
+- Can be challenging to proactively purge cached values when the underlying data has changed
+- Requires for you to think about how often to hold cache data and dealing with stale data
+
+
+Caching data on the browser:
+![Local Cache](https://assets-global.website-files.com/628fadb065a50abf13a11485/631b420197042d2eb5c0d0bd_Types%20of%20Caches%20whitepaper%20-%20Local%20Storage.jpeg)
+
+Caching data on the application server:
+![Local Cache Apps](https://assets-global.website-files.com/628fadb065a50abf13a11485/631b41f1a5c7ff01eaf6c2be_Types%20of%20Caches%20whitepaper%20-%20Local%20app%20cache.jpeg)
 
 #### Sources:
+- [Cut the caching clutter: understanding cache types](https://www.gomomento.com/blog/cut-the-caching-clutter-understanding-cache-types)
 - [System Design Basics: Caching](https://medium.com/geekculture/system-design-basics-caching-46b1614915f8) - An article on Medium discussing the basics of caching in system design.
