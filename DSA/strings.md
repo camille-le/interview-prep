@@ -45,7 +45,7 @@ abc
 ```
 
 ### Python Indexing
-It is possible to access an index of a string and re-assign the value.
+It is possible to access an index of a string and re-assign the value to a new string.
 ```python
 text = "hello and welcome to my world"
 x = text[0].upper() + text[1:]
@@ -56,8 +56,24 @@ Hello and welcome to my world
 ```
 
 ### Python Count() Method
-
-
+This method returns the number of time a substring appears in a given string. 
+```python
+text = "apple apple apple"
+counts = text.count("apple")
+"""
+output: 
+3
+"""
+```
+In this case, we only found "le" twice: 
+```python
+text = "apple apple app"
+counts = text.count("le")
+"""
+output: 
+2
+"""
+```
 
 ### Python Find() Method
 
