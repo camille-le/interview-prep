@@ -3,9 +3,30 @@ For a common list of string operations, see this list here:
 https://www.w3schools.com/python/python_ref_string.asp
 Below are some methods that may be used in an interviewing context.
 
+### Python String Iteration
+Without splitting the text, this loop will print over each character in a new line:
+```python
+text = "abc"
+for ch in text:
+    print(ch)
+# output:
+# a
+# b
+# c
+```
+By splitting the text (and not specifying the delimiter), we split based on " " and then 
+print each substring on a newline:
+```python
+text = "abc abc"
+for ch in text.split():
+    print(ch)
+# output: 
+# abc
+# abc
+```
+
 ### Python Indexing
-For a given string, it's entirely valid to access a specific index of that string, and assign it
-another value.
+It is possible to access an index of a string and re-assign the value.
 ```python
 text = "hello and welcome to my world"
 x = text[0].upper() + text[1:]
