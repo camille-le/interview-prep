@@ -9,10 +9,12 @@ Without splitting the text, this loop will print over each character in a new li
 text = "abc"
 for ch in text:
     print(ch)
-# output:
-# a
-# b
-# c
+"""
+output:
+a
+b
+c
+"""
 ```
 By splitting the text (and not specifying the delimiter), we split based on " " and then 
 print each substring on a newline:
@@ -20,9 +22,23 @@ print each substring on a newline:
 text = "abc abc"
 for ch in text.split():
     print(ch)
-# output: 
-# abc
-# abc
+"""
+output: 
+abc
+abc
+"""
+```
+
+Here we specify what to split on and achieve the following result: 
+```python
+text = "abc # abc"
+for ch in text.split("#"):
+    print(ch)
+"""
+output: 
+abc
+ abc
+"""
 ```
 
 ### Python Indexing
@@ -30,7 +46,10 @@ It is possible to access an index of a string and re-assign the value.
 ```python
 text = "hello and welcome to my world"
 x = text[0].upper() + text[1:]
-# Output: Hello and welcome to my world
+"""
+output: 
+Hello and welcome to my world
+"""
 ```
 
 ### Python Count() Method
@@ -58,21 +77,33 @@ through one element in the object at a time. Some examples include a
 # E1: Join without a separator
 arr = ["1","2","3"]
 res = "".join(arr)
-# Output: "123"
+"""
+output: 
+"123"
+"""
 
 # E2: Join with a "," separator
 arr = ["1","2","3"]
 res = ",".join(arr)
-# Output: "1,2,3"
+"""
+output: 
+"1,2,3"
+"""
 
 # E3: Join with a "#" separator
 arr = ["1","2","3"]
 res = "#".join(arr)
-# Output: "1#2#3"
+"""
+output: 
+"1#2#3"
+"""
 
 # E4: Join with dictionary keys
 myDict = {"name": "John", "country": "Norway"}
 mySeparator = "TEST"
 x = mySeparator.join(myDict)
-# Output: nameTESTcountry
+"""
+output:
+nameTESTcountry
+"""
 ```
