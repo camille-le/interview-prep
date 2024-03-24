@@ -1,5 +1,31 @@
 ### Strings
+For a common list of string operations, see this list here: 
+https://www.w3schools.com/python/python_ref_string.asp
+Below are some methods that may be used in an interviewing context.
 
+### Python Indexing
+For a given string, it's entirely valid to access a specific index of that string, and assign it
+another value.
+```python
+text = "hello and welcome to my world"
+x = text[0].upper() + text[1:]
+# Output: Hello and welcome to my world
+```
+
+### Python Count() Method
+
+
+
+### Python Find() Method
+
+
+### Python Index() Method
+
+
+### Python Replace() Method
+
+
+### Python SplitLines() Method 
 
 
 ### Python String join() Method
@@ -28,5 +54,4 @@ myDict = {"name": "John", "country": "Norway"}
 mySeparator = "TEST"
 x = mySeparator.join(myDict)
 # Output: nameTESTcountry
-
 ```
