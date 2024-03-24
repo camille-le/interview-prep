@@ -3,7 +3,6 @@ Scalability refers to how a system responds to changes by adding or removing res
 ![Vertical vs Horizontal Scaling Compared](https://crl2020.imgix.net/img/vertical-versus-horizontal-scaling-compared-diagram.png?auto=format,compress&max-w=640)
 *Image credit: [Vertical vs Horizontal Scaling Compared](https://crl2020.imgix.net/img/vertical-versus-horizontal-scaling-compared-diagram.png?auto=format,compress&max-w=640)*
 
-
 ### Horizontal Scaling ("Scaling Out")
 - Add more machines to expand a system's scale
 - By adding more instances to the existing pool of servers, load can be distributed more evenly
@@ -25,6 +24,5 @@ Scalability refers to how a system responds to changes by adding or removing res
 | Easier to manage    | Harder to upgrade                  |
 | Data consistent     | Can be a single point of failure   |
 
-
 #### Sources
-- System Design Primer: [https://github.com/karanpratapsingh/system-design](https://github.com/karanpratapsingh/system-design)
+- [System Design Primer](https://github.com/karanpratapsingh/system-design)
