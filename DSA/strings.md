@@ -1,10 +1,9 @@
-### Strings
-For a common list of string operations, see this list here: 
-https://www.w3schools.com/python/python_ref_string.asp
-Below are some methods that may be used in an interviewing context.
-- In python, strings are immutable.
-- It takes `O(n)` to cast a string to a list.
-- Lists of characters are mutable
+## STRINGS
+See [common string operations](https://www.w3schools.com/python/python_ref_string.asp) for a comprehensive list. Relevant for interviews:
+
+- Strings in Python are immutable.
+- Casting a string to a list is `O(n)`.
+- Character lists are mutable.
 
 ### Python String Iteration
 Without splitting the text, this loop will print over each character in a new line:
