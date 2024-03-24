@@ -9,4 +9,4 @@ Lorem ipsum
 - [Latency Measurement - Igor](https://igor.io/latency/)  
 - [Everything You Know About Latency Is Wrong - BraveNewGeek](https://bravenewgeek.com/everything-you-know-about-latency-is-wrong/)
 - [Content Delivery Networks - web.dev](https://web.dev/articles/content-delivery-networks)
-- [System Design Primer - GitHub](https://github.com/karanpratapsingh/system-design)
+- [System Design Primer](https://github.com/karanpratapsingh/system-design)
