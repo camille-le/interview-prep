@@ -16,7 +16,6 @@ _Diagram 1_:
 
 [Image Source](https://medium.com/geekculture/system-design-basics-caching-46b1614915f8)
 
-
 ## What are the types of caches?
 * Application Server Cache:
 * Distributed Cache:
