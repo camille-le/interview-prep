@@ -17,8 +17,6 @@ _Diagram 1_:
 [Image Source](https://medium.com/geekculture/system-design-basics-caching-46b1614915f8)
 
 ## What are the types of caches?
-* Application Server Cache:
-* Distributed Cache:
 
 ### Global Cache
 ABOUT:
@@ -49,12 +47,28 @@ CONS:
 - Can be challenging to proactively purge cached values when the underlying data has changed
 - Requires for you to think about how often to hold cache data and dealing with stale data
 
-
 Caching data on the browser:
 ![Local Cache](https://assets-global.website-files.com/628fadb065a50abf13a11485/631b420197042d2eb5c0d0bd_Types%20of%20Caches%20whitepaper%20-%20Local%20Storage.jpeg)
 
 Caching data on the application server:
 ![Local Cache Apps](https://assets-global.website-files.com/628fadb065a50abf13a11485/631b41f1a5c7ff01eaf6c2be_Types%20of%20Caches%20whitepaper%20-%20Local%20app%20cache.jpeg)
+
+### Edge Caching
+An edge cache stores content at multiple different locations at the edge of one's network. It stores copies of content in servers located close to the user. 
+
+CDNs and DNS are common types of edge caches. 
+* CDN stores static files (images), videos or JavaScript bundles
+* DNS is used to route a website domain to a specific server to handle that request
+
+PROS: 
+- Since edge caches are more centralized, invalidation is easier than on distributed local caches
+
+CONS:
+- Invalidations on edge caches are not expected to happen at a high rate 
+- Some CDNs charge money for each invalidation 
+
+![Edge Cache](https://assets-global.website-files.com/628fadb065a50abf13a11485/631b42359aa4f57f19cb36e8_Types%20of%20Caches%20whitepaper%20-%20Edge%20cache.jpeg)
+
 
 #### Sources:
 - [Cut the caching clutter: understanding cache types](https://www.gomomento.com/blog/cut-the-caching-clutter-understanding-cache-types)
