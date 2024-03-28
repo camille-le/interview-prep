@@ -14,7 +14,24 @@ https://github.com/donnemartin/system-design-primer?
 https://www.youtube.com/playlist?list=PLrtCHHeadkHp92TyPt1Fj452_VGLipJnL
 https://www.quora.com/What-should-a-new-grad-know-in-order-to-perform-well-on-system-design-interviews
 
+
+Grokking System Design Interview: https://www.designgurus.io/path/System-Design-Interview-Playbook
+DDIA: Designing Data-Intensive Applications
+Check the blogs: https://arslan-ahmad.medium.com/
+
+
 Read Design of Data-Intensive applications.
+
+
+ There isn't the one perfect solution. Try to come up with something that you think could work and explain why.
+
+Furthermore, consider non-functional requirements. Try to approximate request rates, throughput (in business case/s, mb/s), find out about security and consistency requirements. Don't just ask about this and then don't use it in your design (in my experience many people do this).
+
+Identify bottlenecks in your design by making assumptions about how your system scales (e.g. which supported use-cases grow faster than others) - talk to your interviewer to confirm these assumptions. You can make high level tech choices based on these. It's fine if you don't have detailed experience with for example super high scalability, considering such concerns is always good. If you have it, even better.
+
+Bonus points if you understand SLAs, SLOs, and SLIs and how to leverage them to manage quality.
+
+
 
 
 
